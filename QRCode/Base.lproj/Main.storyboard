@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HGa-dF-dbA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKX-tq-lFn">
+                                <rect key="frame" x="221" y="160" width="84" height="30"/>
+                                <state key="normal" title=" 扫描二维码">
+                                    <color key="titleColor" red="0.1019607843" green="0.074509803920000006" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjs-hM-aWN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入生成二维码的文字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qjs-1e-wJi">
+                                <rect key="frame" x="76" y="114" width="223" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-fg-IHo">
+                                <rect key="frame" x="76" y="160" width="84" height="30"/>
+                                <state key="normal" title="生成二维码">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ht-6Q-oZq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7k0-Y4-WhX">
+                                <rect key="frame" x="87" y="234" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7k0-Y4-WhX" secondAttribute="height" multiplier="1:1" id="3W7-PN-iLg"/>
+                                    <constraint firstAttribute="width" constant="200" id="UNI-Ry-ha7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GOD-yL-L0N">
+                                <rect key="frame" x="173" y="318" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GOD-yL-L0N" secondAttribute="height" multiplier="1:1" id="API-Pn-DOY"/>
+                                    <constraint firstAttribute="width" constant="30" id="zgC-b0-N92"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GOD-yL-L0N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0q4-O4-F6k"/>
+                            <constraint firstItem="7k0-Y4-WhX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q1H-3c-kHn"/>
+                            <constraint firstItem="GOD-yL-L0N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ccE-3M-7fU"/>
+                            <constraint firstItem="7k0-Y4-WhX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uIO-0I-9Bs"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cfH-ME-UeS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="QRImageView" destination="7k0-Y4-WhX" id="Zy1-UY-qAd"/>
+                        <outlet property="smallImage" destination="GOD-yL-L0N" id="S5N-Kz-fC5"/>
+                        <outlet property="textfield" destination="Qjs-1e-wJi" id="2yS-tn-ccm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1082.5" y="401.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bk9-tg-6rL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HGa-dF-dbA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A9K-Yb-qni">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="su0-Vd-iCA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6C2-Y2-jaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="401"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smallImage.jpg" width="200" height="200"/>
+    </resources>
 </document>

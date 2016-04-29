@@ -15,6 +15,18 @@
 		0AA254CD1C92A9E2002928C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA254CB1C92A9E2002928C9 /* LaunchScreen.storyboard */; };
 		0AA254D81C92A9E2002928C9 /* QRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA254D71C92A9E2002928C9 /* QRCodeTests.m */; };
 		0AA254E31C92A9E3002928C9 /* QRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA254E21C92A9E3002928C9 /* QRCodeUITests.m */; };
+		0AA254F11C92A9F4002928C9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA254F01C92A9F4002928C9 /* AVFoundation.framework */; };
+		0AF277101CD33F96000F5261 /* lightNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF277081CD33F96000F5261 /* lightNormal.png */; };
+		0AF277111CD33F96000F5261 /* lightSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF277091CD33F96000F5261 /* lightSelect.png */; };
+		0AF277121CD33F96000F5261 /* LJZQRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2770B1CD33F96000F5261 /* LJZQRCodeReaderView.m */; };
+		0AF277131CD33F96000F5261 /* noticeMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2770C1CD33F96000F5261 /* noticeMusic.wav */; };
+		0AF277141CD33F96000F5261 /* scanBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2770D1CD33F96000F5261 /* scanBg.png */; };
+		0AF277151CD33F96000F5261 /* scanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2770E1CD33F96000F5261 /* scanLine@2x.png */; };
+		0AF277161CD33F96000F5261 /* scanLine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2770F1CD33F96000F5261 /* scanLine@3x.png */; };
+		0AF277191CD34206000F5261 /* LJZScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF277181CD34206000F5261 /* LJZScanQRCodeViewController.m */; };
+		0AF2771C1CD346E0000F5261 /* LJZQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2771B1CD346E0000F5261 /* LJZQRCodeGenerator.m */; };
+		0AF2771E1CD34986000F5261 /* smallImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2771D1CD34986000F5261 /* smallImage.jpg */; };
+		0AF277201CD34AFD000F5261 /* myqrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AF2771F1CD34AFD000F5261 /* myqrcode.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,21 @@
 		0AA254DE1C92A9E2002928C9 /* QRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA254E21C92A9E3002928C9 /* QRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeUITests.m; sourceTree = "<group>"; };
 		0AA254E41C92A9E3002928C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA254F01C92A9F4002928C9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0AF277081CD33F96000F5261 /* lightNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightNormal.png; sourceTree = "<group>"; };
+		0AF277091CD33F96000F5261 /* lightSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightSelect.png; sourceTree = "<group>"; };
+		0AF2770A1CD33F96000F5261 /* LJZQRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZQRCodeReaderView.h; sourceTree = "<group>"; };
+		0AF2770B1CD33F96000F5261 /* LJZQRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZQRCodeReaderView.m; sourceTree = "<group>"; };
+		0AF2770C1CD33F96000F5261 /* noticeMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = noticeMusic.wav; sourceTree = "<group>"; };
+		0AF2770D1CD33F96000F5261 /* scanBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanBg.png; sourceTree = "<group>"; };
+		0AF2770E1CD33F96000F5261 /* scanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@2x.png"; sourceTree = "<group>"; };
+		0AF2770F1CD33F96000F5261 /* scanLine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@3x.png"; sourceTree = "<group>"; };
+		0AF277171CD34206000F5261 /* LJZScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LJZScanQRCodeViewController.h; path = "二维码扫描/LJZScanQRCodeViewController.h"; sourceTree = "<group>"; };
+		0AF277181CD34206000F5261 /* LJZScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LJZScanQRCodeViewController.m; path = "二维码扫描/LJZScanQRCodeViewController.m"; sourceTree = "<group>"; };
+		0AF2771A1CD346E0000F5261 /* LJZQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJZQRCodeGenerator.h; sourceTree = "<group>"; };
+		0AF2771B1CD346E0000F5261 /* LJZQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJZQRCodeGenerator.m; sourceTree = "<group>"; };
+		0AF2771D1CD34986000F5261 /* smallImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = smallImage.jpg; sourceTree = "<group>"; };
+		0AF2771F1CD34AFD000F5261 /* myqrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myqrcode.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA254F11C92A9F4002928C9 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +109,7 @@
 		0AA254B11C92A9E2002928C9 = {
 			isa = PBXGroup;
 			children = (
+				0AA254F01C92A9F4002928C9 /* AVFoundation.framework */,
 				0AA254BC1C92A9E2002928C9 /* QRCode */,
 				0AA254D61C92A9E2002928C9 /* QRCodeTests */,
 				0AA254E11C92A9E3002928C9 /* QRCodeUITests */,
@@ -101,10 +130,13 @@
 		0AA254BC1C92A9E2002928C9 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
+				0AF277071CD33F96000F5261 /* 二维码扫描 */,
 				0AA254C01C92A9E2002928C9 /* AppDelegate.h */,
 				0AA254C11C92A9E2002928C9 /* AppDelegate.m */,
 				0AA254C31C92A9E2002928C9 /* ViewController.h */,
 				0AA254C41C92A9E2002928C9 /* ViewController.m */,
+				0AF277171CD34206000F5261 /* LJZScanQRCodeViewController.h */,
+				0AF277181CD34206000F5261 /* LJZScanQRCodeViewController.m */,
 				0AA254C61C92A9E2002928C9 /* Main.storyboard */,
 				0AA254C91C92A9E2002928C9 /* Assets.xcassets */,
 				0AA254CB1C92A9E2002928C9 /* LaunchScreen.storyboard */,
@@ -138,6 +170,25 @@
 				0AA254E41C92A9E3002928C9 /* Info.plist */,
 			);
 			path = QRCodeUITests;
+			sourceTree = "<group>";
+		};
+		0AF277071CD33F96000F5261 /* 二维码扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				0AF2770A1CD33F96000F5261 /* LJZQRCodeReaderView.h */,
+				0AF2770B1CD33F96000F5261 /* LJZQRCodeReaderView.m */,
+				0AF2771A1CD346E0000F5261 /* LJZQRCodeGenerator.h */,
+				0AF2771B1CD346E0000F5261 /* LJZQRCodeGenerator.m */,
+				0AF277081CD33F96000F5261 /* lightNormal.png */,
+				0AF277091CD33F96000F5261 /* lightSelect.png */,
+				0AF2770C1CD33F96000F5261 /* noticeMusic.wav */,
+				0AF2770D1CD33F96000F5261 /* scanBg.png */,
+				0AF2770E1CD33F96000F5261 /* scanLine@2x.png */,
+				0AF2770F1CD33F96000F5261 /* scanLine@3x.png */,
+				0AF2771F1CD34AFD000F5261 /* myqrcode.png */,
+				0AF2771D1CD34986000F5261 /* smallImage.jpg */,
+			);
+			path = "二维码扫描";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +253,7 @@
 		0AA254B21C92A9E2002928C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LJZ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = likeme;
 				TargetAttributes = {
@@ -244,8 +296,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA254CD1C92A9E2002928C9 /* LaunchScreen.storyboard in Resources */,
+				0AF2771E1CD34986000F5261 /* smallImage.jpg in Resources */,
+				0AF277151CD33F96000F5261 /* scanLine@2x.png in Resources */,
 				0AA254CA1C92A9E2002928C9 /* Assets.xcassets in Resources */,
+				0AF277131CD33F96000F5261 /* noticeMusic.wav in Resources */,
+				0AF277141CD33F96000F5261 /* scanBg.png in Resources */,
 				0AA254C81C92A9E2002928C9 /* Main.storyboard in Resources */,
+				0AF277101CD33F96000F5261 /* lightNormal.png in Resources */,
+				0AF277111CD33F96000F5261 /* lightSelect.png in Resources */,
+				0AF277201CD34AFD000F5261 /* myqrcode.png in Resources */,
+				0AF277161CD33F96000F5261 /* scanLine@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AF2771C1CD346E0000F5261 /* LJZQRCodeGenerator.m in Sources */,
 				0AA254C51C92A9E2002928C9 /* ViewController.m in Sources */,
+				0AF277121CD33F96000F5261 /* LJZQRCodeReaderView.m in Sources */,
 				0AA254C21C92A9E2002928C9 /* AppDelegate.m in Sources */,
 				0AA254BF1C92A9E2002928C9 /* main.m in Sources */,
+				0AF277191CD34206000F5261 /* LJZScanQRCodeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +476,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QRCode/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.likeme.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -424,6 +491,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = QRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QRCode/ZBarSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.likeme.QRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -496,6 +567,7 @@
 				0AA254E91C92A9E3002928C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AA254EA1C92A9E3002928C9 /* Build configuration list for PBXNativeTarget "QRCodeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +576,7 @@
 				0AA254EC1C92A9E3002928C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AA254ED1C92A9E3002928C9 /* Build configuration list for PBXNativeTarget "QRCodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +585,7 @@
 				0AA254EF1C92A9E3002928C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
