@@ -16,7 +16,7 @@
 
 #define kContentColor LJZRGBColor(102, 102, 102)
 
-@interface LJZQRCodeReaderView ()<AVCaptureMetadataOutputObjectsDelegate>
+@interface LJZQRCodeReaderView ()<AVCaptureMetadataOutputObjectsDelegate,UIAlertViewDelegate>
 {
     AVCaptureSession *_session;
     
@@ -136,6 +136,27 @@
     //开始捕获
     [_session startRunning];
     
+    //判断设备相机权限
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    if(authStatus == AVAuthorizationStatusRestricted || authStatus == AVAuthorizationStatusDenied){
+        
+        NSLog(@"相机权限受限");
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"提示" message:@"未开启访问相册权限，请在设置->隐私->相机中进行设置！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        
+        [alert show];
+        
+        return;
+    }
+
+    
+}
+- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+    
+    UIResponder *responder = [[self nextResponder]nextResponder];
+    if ([responder isKindOfClass:[UIViewController class]]) {
+        UIViewController *VC = (UIViewController *)responder;
+        [VC.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 - (void)setOverlayPickerView:(LJZQRCodeReaderView *)reader
 {
