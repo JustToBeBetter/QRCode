@@ -154,8 +154,10 @@
     AudioServicesPlaySystemSound(soundID);
     
     [self accordingQcode:result];
-    
-    [self performSelector:@selector(reStartScan) withObject:nil afterDelay:1.5];
+    //跳转二级页面则_isPush置为YES 否则获得扫描结果后会重新开启扫描
+    if(!_isPush){
+         [self performSelector:@selector(reStartScan) withObject:nil afterDelay:1.5];
+    }
 }
 - (void)reStartScan
 {
